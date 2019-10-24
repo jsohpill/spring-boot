@@ -299,6 +299,9 @@ public class ServletWebServerApplicationContext extends GenericWebApplicationCon
 		return webServer;
 	}
 
+	/**
+	 * 停止并且释放Web Server。
+	 */
 	private void stopAndReleaseWebServer() {
 		WebServer webServer = this.webServer;
 		if (webServer != null) {

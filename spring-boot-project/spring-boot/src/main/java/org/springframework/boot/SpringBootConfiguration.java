@@ -36,6 +36,12 @@ import org.springframework.core.annotation.AliasFor;
  * most idiomatic Spring Boot applications will inherit it from
  * {@code @SpringBootApplication}.
  *
+ * 表示一个类提供了Spring Boot应用程序{@link Configuration @Configuration}。
+ * 可以用作Spring标准的{@code @Configuration}注释的替代方法，以便可以自动找到配置（例如在测试中）。
+ * <p>
+ * 应用程序仅应包含<em> one </ em> {@code @SpringBootConfiguration} 和
+ * 大多数惯用的Spring Boot应用程序都会从中继承它{@code @SpringBootApplication}。
+ *
  * @author Phillip Webb
  * @author Andy Wilkinson
  * @since 1.4.0
